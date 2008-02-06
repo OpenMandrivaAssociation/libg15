@@ -4,7 +4,7 @@
 
 Name:           libg15
 Version:        1.2.6
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Library to control logitech G15 keyboards
 License:        GPL
 Group:          System/Libraries
@@ -67,7 +67,7 @@ on this keyboard.
 
 %files -n %{libname}
 %defattr(-,root,root,0755)
-%doc AUTHORS COPYING NEWS README
+%doc AUTHORS ChangeLog COPYING INSTALL NEWS README
 %{_libdir}/libg15.so.*
 
 %files -n %{libname_devel}
