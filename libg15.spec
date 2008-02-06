@@ -2,10 +2,10 @@
 %define libname_devel %mklibname g15 -d
 %define libname_static_devel %mklibname g15 -d -s
 
-Summary:        Library to control logitech G15 keyboards
 Name:           libg15
 Version:        1.2.6
-Release:        %mkrel 1
+Release:        %mkrel 2
+Summary:        Library to control logitech G15 keyboards
 License:        GPL
 Group:          System/Libraries
 URL:            http://g15tools.sourceforge.net/
@@ -21,7 +21,6 @@ on this keyboard.
 %package -n %{libname}
 Summary:        Controls the G15 keyboard and LCD
 Group:          System/Libraries
-Provides:       g15-devel = %{version}-%{release}
 
 %description -n %{libname}
 Controls the G15 keyboard, providing applications access
@@ -69,12 +68,12 @@ on this keyboard.
 %files -n %{libname}
 %defattr(-,root,root,0755)
 %doc AUTHORS COPYING NEWS README
-%{_libdir}/lib*.la
 %{_libdir}/libg15.so.*
 
 %files -n %{libname_devel}
 %defattr(-,root,root,0755)
 %{_includedir}/*
+%{_libdir}/lib*.la
 %{_libdir}/libg15.so
 
 %files -n %{libname_static_devel}
