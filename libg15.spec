@@ -4,7 +4,7 @@
 
 Name:           libg15
 Version:        1.2.6
-Release:        %mkrel 4
+Release:        %mkrel 5
 Summary:        Library to control logitech G15 keyboards
 License:        GPL
 Group:          System/Libraries
@@ -32,6 +32,7 @@ on this keyboard.
 Summary:        Controls the G15 keyboard and LCD
 Group:          Development/C
 Provides:       g15-devel = %{version}-%{release}
+Requires:       g15 = %{version}-%{release}
 
 %description -n %{libname_devel}
 Controls the G15 keyboard, providing applications access
@@ -42,6 +43,7 @@ on this keyboard.
 Summary:        Controls the G15 keyboard and LCD
 Group:          Development/C
 Provides:       g15-static-devel = %{version}-%{release}
+Requires:       g15-devel = %{version}-%{release}
 
 %description -n %{libname_static_devel}
 Controls the G15 keyboard, providing applications access
