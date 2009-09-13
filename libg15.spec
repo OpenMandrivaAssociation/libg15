@@ -4,7 +4,7 @@
 
 Name:           libg15
 Version:        1.2.6
-Release:        %mkrel 8
+Release:        %mkrel 9
 Summary:        Library to control logitech G15 keyboards
 License:        GPL
 Group:          System/Libraries
