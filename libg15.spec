@@ -3,10 +3,10 @@
 %define libname_static_devel %mklibname g15 -d -s
 
 Name:           libg15
-Version:        1.2.6
-Release:        %mkrel 9
+Version:        1.2.7
+Release:        %mkrel 1
 Summary:        Library to control logitech G15 keyboards
-License:        GPL
+License:        GPLv2+
 Group:          System/Libraries
 URL:            http://g15tools.sourceforge.net/
 Source:         http://downloads.sourceforge.net/g15tools/libg15-%{version}.tar.bz2
