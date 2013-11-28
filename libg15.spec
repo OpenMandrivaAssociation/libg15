@@ -10,7 +10,7 @@ License:        GPLv2+
 Group:          System/Libraries
 URL:            http://g15tools.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/g15tools/libg15-%{version}.tar.bz2
-BuildRequires:  pkgconfig(libusb-1.0)
+BuildRequires:  pkgconfig(libusb)
 
 %description
 Controls the G15 keyboard, providing applications access
