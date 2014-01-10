@@ -1,7 +1,6 @@
 %define major 1
 %define libname %mklibname g15_ %{major}
 %define libname_devel %mklibname g15 -d
-%define libname_static_devel %mklibname g15 -d -s
 
 Name:		libg15
 Version:	1.2.7
@@ -60,8 +59,7 @@ on this keyboard.
 %install
 %{makeinstall_std}
 
-
-%files -n %{libname}
+files -n %{libname}
 %{_libdir}/libg15.so.%{major}*
 
 %files -n %{libname_devel}
@@ -69,8 +67,6 @@ on this keyboard.
 %{_includedir}/*
 %{_libdir}/libg15.so
 
-%files -n %{libname_static_devel}
-%defattr(-,root,root,0755)
-%{_libdir}/lib*.a
+
 
 
