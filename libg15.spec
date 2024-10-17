@@ -9,7 +9,7 @@ Release:        7
 Summary:        Library to control logitech G15 keyboards
 License:        GPLv2+
 Group:          System/Libraries
-URL:            http://g15tools.sourceforge.net/
+URL:            https://g15tools.sourceforge.net/
 Source:         http://downloads.sourceforge.net/g15tools/libg15-%{version}.tar.bz2
 BuildRequires:  pkgconfig(libusb)
 
