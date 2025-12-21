@@ -11,6 +11,11 @@ License:        GPLv2+
 Group:          System/Libraries
 URL:            https://g15tools.sourceforge.net/
 Source:         http://downloads.sourceforge.net/g15tools/libg15-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(libusb)
 
 %description
